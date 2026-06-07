@@ -20,7 +20,7 @@ const HeroBanner = () => {
         </div>
         <Link to="/product" className={styles.w100}>
           <img
-            src={`/images/img_${img[currentIndex]}.jpg`}
+            src={`/First-React/images/img_${img[currentIndex]}.jpg`}
             alt="End of Reason Sale"
             className={styles.bannerImg}
           />
