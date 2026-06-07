@@ -1,5 +1,5 @@
 /* ===========================
-   Auth Pages (Login & Signup)
+   Auth Pages (Login & Signup) - Fully Responsive
    =========================== */
 
 .authBody {
@@ -374,7 +374,24 @@
   text-decoration: none;
 }
 
-/* ---- Responsive ---- */
+/* ---- Responsive: 1024px and below ---- */
+@media (max-width: 1024px) {
+  .authLeft {
+    width: 350px;
+    padding: 36px 32px;
+  }
+  .authRight {
+    padding: 40px 48px;
+  }
+  .authLeftContent h2 {
+    font-size: 24px;
+  }
+  .authTitle {
+    font-size: 28px;
+  }
+}
+
+/* ---- Responsive: 768px and below ---- */
 @media (max-width: 768px) {
   .authWrapper {
     flex-direction: column;
@@ -390,13 +407,148 @@
     padding: 24px 0;
   }
 
-  .authLeftContent h2 { font-size: 22px; }
+  .authLeftContent h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
 
-  .authLeftFooter { display: none; }
+  .authLeftContent p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .authLeftFooter {
+    display: none;
+  }
 
   .authRight {
     padding: 32px 24px;
   }
 
-  .authTitle { font-size: 24px; }
+  .authTitle {
+    font-size: 24px;
+    margin-bottom: 6px;
+  }
+
+  .authSubtitle {
+    font-size: 13px;
+    margin-bottom: 24px;
+  }
+
+  .authForm {
+    max-width: 100%;
+  }
+
+  .formGroup input[type="text"],
+  .formGroup input[type="email"],
+  .formGroup input[type="password"],
+  .formGroup input[type="tel"] {
+    padding: 12px 12px;
+    font-size: 14px;
+  }
+
+  .btnAuthPrimary {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .btnAuthSecondary {
+    padding: 12px;
+    font-size: 13px;
+  }
+}
+
+/* ---- Responsive: < 600px Mobile ---- */
+@media (max-width: 600px) {
+  .authLeft {
+    padding: 24px 20px;
+  }
+
+  .authLogo span {
+    font-size: 20px;
+  }
+
+  .authLeftContent {
+    padding: 20px 0;
+  }
+
+  .authLeftContent h2 {
+    font-size: 18px;
+  }
+
+  .authLeftContent p {
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+
+  .btnOutlineWhite {
+    padding: 10px 24px;
+    font-size: 12px;
+  }
+
+  .authRight {
+    padding: 24px 16px;
+  }
+
+  .authTitle {
+    font-size: 20px;
+  }
+
+  .authSubtitle {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  .formGroup label {
+    font-size: 12px;
+  }
+
+  .formGroup input[type="text"],
+  .formGroup input[type="email"],
+  .formGroup input[type="password"],
+  .formGroup input[type="tel"] {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  .inputActionBtn {
+    font-size: 12px;
+    right: 8px;
+  }
+
+  .inputPrefix {
+    padding: 10px 10px;
+    font-size: 13px;
+  }
+
+  .btnAuthPrimary {
+    padding: 10px;
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+
+  .btnAuthSecondary {
+    padding: 10px;
+    font-size: 12px;
+    gap: 8px;
+  }
+
+  .authDivider {
+    font-size: 12px;
+    margin: 6px 0 12px;
+  }
+
+  .authSwitch {
+    margin-top: 16px;
+    font-size: 12px;
+  }
+
+  .authTerms {
+    font-size: 11px;
+    margin-bottom: 16px;
+  }
+
+  .formCheck label {
+    font-size: 12px;
+  }
 }
