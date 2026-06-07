@@ -23,7 +23,7 @@ import WhishList from "./pages/wishlist";
 import Profile from "./pages/profile";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <HashRouter>
+    <BrowserRouter basename="/First-React">
       <Header />
 
       <Routes>
@@ -48,6 +48,6 @@ createRoot(document.getElementById("root")).render(
       </Routes>
 
       <Footer />
-    </HashRouter>
+    </BrowserRouter>
   </StrictMode>,
 );
