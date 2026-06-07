@@ -1,0 +1,399 @@
+/* Product Detail Page Styles */
+
+.pdpMain {
+  padding: 0 20px;
+}
+
+.pdpLayout {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+/* Gallery */
+.pdpGallery {
+  display: flex;
+  gap: 12px;
+  flex: 0 0 600px;
+  max-width: 600px;
+  position: sticky;
+  top: 90px;
+  align-self: flex-start;
+}
+
+.galleryThumbnails {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.galleryThumbnails .thumb {
+  width: 68px;
+  height: 82px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  transition: border-color 0.2s ease;
+}
+
+.galleryThumbnails .thumb.active,
+.galleryThumbnails .thumb:hover {
+  border-color: var(--primary-pink);
+}
+
+.galleryMain {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.galleryMain img {
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.galleryMain:hover img {
+  transform: scale(1.03);
+}
+
+.gallery-Nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  pointer-events: none;
+}
+
+.galleryBtn {
+  pointer-events: all;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+
+.galleryBtn:hover {
+  background: white;
+}
+
+/* Info Panel */
+.pdpInfo {
+  flex: 1;
+  padding-top: 10px;
+}
+
+.pdpBrand {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 6px;
+}
+
+.pdpName {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-light);
+  margin-bottom: 14px;
+  line-height: 1.4;
+}
+
+.pdpRating {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--border-dark);
+}
+
+.ratingBadge {
+  background: #388e3c;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.ratingCount {
+  font-size: 14px;
+  color: var(--text-light);
+}
+
+.pdpPriceSection {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.pdpDiscounted {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.pdpOriginal {
+  font-size: 16px;
+  color: var(--text-gray);
+  text-decoration: line-through;
+}
+
+.pdpDiscount {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ff905a;
+}
+
+.offerTag {
+  font-size: 12px;
+  color: var(--text-gray);
+  margin-bottom: 18px;
+}
+
+/* Offers */
+.pdpOffers {
+  background: #fffbe7;
+  border: 1px solid #ffe082;
+  border-radius: 6px;
+  padding: 14px 16px;
+  margin-bottom: 24px;
+}
+
+.pdpOffers h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+}
+
+.pdpOffers ul li {
+  font-size: 13px;
+  color: var(--text-light);
+  margin-bottom: 6px;
+}
+
+/* Size Section */
+.pdpSizeSection {
+  margin-bottom: 24px;
+}
+
+.sizeHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.sizeHeader h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.sizeGuide {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--primary-pink);
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.sizeOptions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.sizeBtn {
+  width: 52px;
+  height: 52px;
+  border: 1px solid var(--border-dark);
+  border-radius: 50%;
+  background: white;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-dark);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sizeBtn:hover {
+  border-color: var(--text-dark);
+}
+
+.active {
+  border-color: var(--primary-pink);
+  color: var(--primary-pink);
+  font-weight: 700;
+}
+
+/* CTAs */
+.pdpCtas {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.ctaBag,
+.ctaWishlist {
+  flex: 1;
+  padding: 16px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: opacity 0.2s ease;
+  text-decoration: none;
+}
+
+.ctaBag {
+  background-color: var(--primary-pink);
+  color: white;
+}
+
+.ctaBag svg {
+  stroke: white;
+  width: 20px;
+  height: 20px;
+}
+
+.ctaWishlist {
+  background-color: white;
+  color: var(--text-dark);
+  border: 1px solid var(--border-dark);
+}
+
+.ctaWishlist svg {
+  width: 20px;
+  height: 20px;
+  stroke: var(--text-dark);
+}
+
+.ctaBag:hover,
+.ctaWishlist:hover {
+  opacity: 0.9;
+}
+
+/* Delivery */
+.pdpDelivery {
+  padding-top: 20px;
+  border-top: 1px solid var(--border-dark);
+  margin-bottom: 20px;
+}
+
+.pdpDelivery h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 14px;
+}
+
+.pincodeCheck {
+  display: flex;
+  gap: 0;
+  margin-bottom: 14px;
+  border: 1px solid var(--border-dark);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.pincodeCheck input {
+  flex: 1;
+  padding: 10px 14px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.pincodeCheck button {
+  padding: 10px 18px;
+  background: white;
+  border: none;
+  border-left: 1px solid var(--border-dark);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--primary-pink);
+  cursor: pointer;
+}
+
+.deliveryInfo li {
+  font-size: 13px;
+  color: var(--text-light);
+  margin-bottom: 6px;
+}
+
+/* Product Details */
+.pdpProductDetails {
+  padding-top: 20px;
+  border-top: 1px solid var(--border-dark);
+}
+
+.pdpProductDetails h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 14px;
+}
+
+.pdpProductDetails ul li {
+  font-size: 14px;
+  color: var(--text-light);
+  margin-bottom: 8px;
+}
+
+@media (max-width: 1024px) {
+  .pdpGallery {
+    flex: 0 0 400px;
+    max-width: 400px;
+  }
+  .galleryMain img {
+    height: 480px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pdp-layout {
+    flex-direction: column;
+  }
+  .pdpGallery {
+    max-width: 100%;
+    position: static;
+    flex-direction: column-reverse;
+  }
+  .galleryThumbnails {
+    flex-direction: row;
+  }
+  .galleryThumbnails .thumb {
+    width: 60px;
+    height: 70px;
+  }
+  .galleryMain img {
+    height: 400px;
+  }
+  .pdpCtas {
+    flex-direction: column;
+  }
+}

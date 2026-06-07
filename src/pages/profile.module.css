@@ -1,0 +1,508 @@
+/* ===========================
+   Profile / Account Pages CSS
+   =========================== */
+
+/* Layout */
+.profileMain {
+  display: flex;
+  min-height: calc(100vh - 80px);
+  margin-top: 0;
+  background: #f4f4f5;
+}
+
+/* ---- Sidebar ---- */
+.profileSidebar {
+  width: 260px;
+  flex-shrink: 0;
+  background: white;
+  border-right: 1px solid var(--border-dark);
+  padding: 24px 0;
+  position: sticky;
+  top: 80px;
+  height: calc(100vh - 80px);
+  overflow-y: auto;
+}
+
+.profileUser {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 0 20px 20px;
+  border-bottom: 1px solid var(--border-dark);
+  margin-bottom: 12px;
+}
+
+.profileAvatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    var(--primary-pink),
+    var(--primary-orange)
+  );
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  letter-spacing: 1px;
+}
+
+.profileUserInfo h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 2px;
+}
+
+.profileUserInfo p {
+  font-size: 12px;
+  color: var(--text-gray);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 160px;
+}
+
+/* Sidebar Menu */
+.sidebarMenu {
+  padding: 0;
+}
+
+.sidebarSectionTitle {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-gray);
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  padding: 14px 20px 6px;
+}
+
+.sidebarLink {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-light);
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    color 0.2s;
+  text-decoration: none;
+  border-left: 3px solid transparent;
+}
+
+.sidebarLink:hover {
+  background: var(--bg-light);
+  color: var(--primary-pink);
+}
+
+.sidebarLink.active {
+  background: #fff0f4;
+  color: var(--primary-pink);
+  border-left-color: var(--primary-pink);
+}
+
+.sidebarLink svg {
+  width: 18px;
+  height: 18px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  flex-shrink: 0;
+}
+
+/* ---- Content Area ---- */
+.profileContent {
+  flex: 1;
+  padding: 28px 36px;
+  background: #f4f4f5;
+  min-width: 0;
+}
+
+.contentHeader {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border-dark);
+}
+
+/* ---- Myntra Insider Card ---- */
+.insiderCard {
+  background: linear-gradient(135deg, #ff3f6c 0%, #e91e8c 50%, #f05524 100%);
+  border-radius: 12px;
+  padding: 28px 32px;
+  color: white;
+  margin-bottom: 28px;
+  position: relative;
+  overflow: hidden;
+}
+
+.insiderCard::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.insiderCard::after {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  right: 60px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.insiderCard h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 4px;
+}
+
+.insiderCard p {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.insiderCard .points {
+  font-size: 42px;
+  font-weight: 800;
+  color: white;
+  margin: 16px 0 4px;
+  line-height: 1;
+}
+
+/* ---- Profile Info Form ---- */
+.profileInfoForm {
+  max-width: 600px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border-dark);
+}
+
+.infoRow {
+  display: flex;
+  align-items: center;
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--border-dark);
+  gap: 16px;
+}
+
+.infoRow:last-child {
+  border-bottom: none;
+}
+
+.infoLabel {
+  width: 150px;
+  font-size: 12px;
+  color: var(--text-gray);
+  font-weight: 700;
+  flex-shrink: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.infoValue {
+  flex: 1;
+  font-size: 15px;
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.infoEdit {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--primary-pink);
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.infoEdit:hover {
+  background: #fff0f4;
+}
+
+/* ---- Orders Page ---- */
+.ordersList {
+  max-width: 860px;
+}
+
+.orderCard {
+  background: white;
+  border: 1px solid var(--border-dark);
+  border-radius: 8px;
+  margin-bottom: 16px;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+
+.orderCard:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.orderCardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  background: var(--bg-light);
+  border-bottom: 1px solid var(--border-dark);
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.orderId {
+  font-size: 13px;
+  color: var(--text-gray);
+}
+
+.orderId strong {
+  color: var(--text-dark);
+}
+
+.orderDate {
+  font-size: 13px;
+  color: var(--text-light);
+}
+
+.orderStatus {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 12px;
+  letter-spacing: 0.3px;
+}
+
+.orderStatus.delivered {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.orderStatus.shipped {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+.orderStatus.cancelled {
+  background: #fce4ec;
+  color: #c62828;
+}
+
+.orderItem {
+  display: flex;
+  gap: 16px;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border-dark);
+  align-items: center;
+}
+
+.orderItem:last-of-type {
+  border-bottom: none;
+}
+
+.orderItem img {
+  width: 80px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+  border: 1px solid var(--border-dark);
+}
+
+.orderItemInfo h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+
+.orderItemInfo p {
+  font-size: 13px;
+  color: var(--text-light);
+  margin-bottom: 4px;
+}
+
+.orderItemInfo .itemPrice {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.orderCardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  background: white;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.orderTotal {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.orderActions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.orderBtn {
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid var(--border-dark);
+  background: white;
+  color: var(--text-dark);
+  transition: all 0.2s ease;
+  font-family: var(--font-family);
+}
+
+.orderBtn:hover {
+  background: var(--bg-light);
+  border-color: #aaa;
+}
+
+.orderBtn.primary {
+  background: var(--primary-pink);
+  color: white;
+  border-color: var(--primary-pink);
+}
+
+.orderBtn.primary:hover {
+  background: #e0305a;
+}
+
+/* ---- Wishlist Page ---- */
+.wishlistGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+/* Product card reuse for wishlist */
+.wishlistGrid .product-card {
+  background: white;
+  border-radius: 6px;
+  border: 1px solid var(--border-dark);
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+
+.wishlistGrid .product-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.btnWishlist {
+  padding: 9px 12px;
+  border: 1px solid var(--border-dark);
+  background: white;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: var(--font-family);
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease;
+  color: var(--text-dark);
+}
+
+.btnWishlist:hover {
+  background: var(--bg-light);
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 1200px) {
+  .wishlistGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .wishlistGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .profileContent {
+    padding: 20px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .profileMain {
+    flex-direction: column;
+    background: white;
+  }
+
+  .profileSidebar {
+    width: 100%;
+    position: static;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid var(--border-dark);
+    padding: 16px 0;
+  }
+
+  .profileContent {
+    padding: 16px;
+    background: #f4f4f5;
+  }
+
+  .wishlistGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .infoLabel {
+    width: 120px;
+    font-size: 11px;
+  }
+
+  .orderCardHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .orderActions {
+    width: 100%;
+  }
+
+  .orderBtn {
+    flex: 1;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .wishlistGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .insiderCard {
+    padding: 20px;
+  }
+  .insiderCard .points {
+    font-size: 32px;
+  }
+}

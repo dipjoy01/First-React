@@ -1,0 +1,204 @@
+/* Studio Page Styles */
+
+.studioHero {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.studioHero h1 {
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.studioHero h1 span {
+  background: linear-gradient(90deg, var(--primary-pink), var(--primary-orange));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.studioHero p {
+  font-size: 18px;
+  color: rgba(255,255,255,0.75);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Filter Tabs */
+.studioTabs {
+  display: flex;
+  gap: 10px;
+  padding: 20px 40px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  border-bottom: 1px solid var(--border-dark);
+  background: white;
+  position: sticky;
+  top: 80px;
+  z-index: 100;
+}
+
+.studioTabs::-webkit-scrollbar { display: none; }
+
+.tabBtn {
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: 1px solid var(--border-dark);
+  background: white;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-dark);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  font-family: var(--font-family);
+}
+
+.tabBtn:hover {
+  border-color: var(--primary-pink);
+  color: var(--primary-pink);
+}
+
+.tabBtn.active {
+  background: var(--primary-pink);
+  color: white;
+  border-color: var(--primary-pink);
+}
+
+/* Feed Grid */
+.studioFeed {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 24px 40px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.studioCard {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  background: #f0f0f0;
+}
+
+.studioCard.tall {
+  grid-row: span 2;
+}
+
+.studioCard img {
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.studioCard.tall img {
+  min-height: 580px;
+}
+
+.studioCard:hover img {
+  transform: scale(1.05);
+}
+
+/* Card Overlay */
+.studioCardOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.85));
+  padding: 30px 16px 16px;
+  color: white;
+  transition: opacity 0.3s ease;
+}
+
+.influencerInfo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.influencerAvatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--primary-pink);
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+}
+
+.influencerInfo span {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.9);
+}
+
+.lookTitle {
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.studioTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 12px;
+}
+
+/* Like Button */
+.likeBtn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(255,255,255,0.9);
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--text-dark);
+  transition: transform 0.2s ease;
+}
+
+.likeBtn:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 1024px) {
+  .studioFeed { grid-template-columns: repeat(2, 1fr); padding: 20px; }
+}
+
+@media (max-width: 768px) {
+  .studioFeed { grid-template-columns: 1fr; }
+  .studioCard.tall { grid-row: span 1; }
+  .studioCard.tall img { min-height: 300px; }
+  .studioHero h1 { font-size: 32px; }
+  .studioTabs { padding: 16px 20px; }
+}
