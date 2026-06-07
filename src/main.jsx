@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
 import App from "./App.jsx";
 import Cart from "@/pages/cart";
@@ -23,7 +23,7 @@ import WhishList from "./pages/wishlist";
 import Profile from "./pages/profile";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <Header />
 
       <Routes>
@@ -48,6 +48,6 @@ createRoot(document.getElementById("root")).render(
       </Routes>
 
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   </StrictMode>,
 );
