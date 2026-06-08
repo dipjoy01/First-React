@@ -4,12 +4,14 @@ import styles from "@/pages/login.module.css";
 function SignUp() {
   return (
     <>
-      <div classNew={styles.authBody}>
-        <div classNew={styles.authWrapper}>
+      <div className={styles.authBody}>
+        <div className={styles.authWrapper}>
           {/* <!-- Left Panel --> */}
-          <div classNew={styles.authLeft}>
-            <a href="index.html" classNew={styles.authLogo}>
-              <svg viewBox="0 0 45 32" style={{height: '50px', width: '70px'}}>
+          <div className={styles.authLeft}>
+            <a href="index.html" className={styles.authLogo}>
+              <svg
+                viewBox="0 0 45 32"
+                style={{ height: "50px", width: "70px" }}>
                 <path
                   fill="#fff"
                   d="M14.4 0c-.5 0-.9.2-1.3.5l-12.7 13.5c-.5.6-.5 1.5 0 2.1l12.7 13.5c.3.3.8.5 1.3.5h7c.8 0 1.5-.7 1.5-1.5V1.5C22.9.7 22.2 0 21.4 0h-7zm6.7 3v24l-9.8-10.4c-.4-.5-.4-1.3 0-1.8L21.1 3z"></path>
@@ -19,39 +21,39 @@ function SignUp() {
               </svg>
               <span>myntra</span>
             </a>
-            <div classNew={styles.authLeftContent}>
+            <div className={styles.authLeftContent}>
               <h2>Already have an account?</h2>
               <p>
                 Log in with your mobile number or email to continue shopping
               </p>
-              <Link to="/login" classNew={styles.btnOutlineWhite}>
+              <Link to="/login" className={styles.btnOutlineWhite}>
                 LOGIN
               </Link>
             </div>
-            <div classNew={styles.authLeftFooter}>
+            <div className={styles.authLeftFooter}>
               <img
                 src="/images/img_12.png"
                 alt="Google Play"
-                style={{height:'34px', filter:'brightness(0) invert(1)'}}
+                style={{ height: "34px", filter: "brightness(0) invert(1)" }}
               />
               <img
                 src="/images/img_13.png"
                 alt="App Store"
-                style={{height:'34px', filter:'brightness(0) invert(1)'}}
+                style={{ height: "34px", filter: "brightness(0) invert(1)" }}
               />
             </div>
           </div>
 
           {/* <!-- Right Panel --> */}
-          <div classNew={styles.authRight}>
-            <h2 classNew={styles.authTitle}>Create Account</h2>
-            <p classNew={styles.authSubtitle}>
+          <div className={styles.authRight}>
+            <h2 className={styles.authTitle}>Create Account</h2>
+            <p className={styles.authSubtitle}>
               Join Myntra and get access to exclusive deals, your wishlist &
               much more
             </p>
 
-            <form classNew={styles.authForm} onsubmit="handleSignup(event)">
-              <div classNew={styles.formGroup}>
+            <form className={styles.authForm} onsubmit="handleSignup(event)">
+              <div className={styles.formGroup}>
                 <label for="signup-name">Full Name</label>
                 <input
                   type="text"
@@ -61,7 +63,7 @@ function SignUp() {
                 />
               </div>
 
-              <div classNew={styles.formGroup}>
+              <div className={styles.formGroup}>
                 <label for="signup-email">Email Address</label>
                 <input
                   type="email"
@@ -71,10 +73,10 @@ function SignUp() {
                 />
               </div>
 
-              <div classNew={styles.formGroup}>
+              <div className={styles.formGroup}>
                 <label for="signup-mobile">Mobile Number</label>
-                <div classNew={styles.inputWithPrefix}>
-                  <span classNew={styles.inputPrefix}>+91</span>
+                <div className={styles.inputWithPrefix}>
+                  <span className={styles.inputPrefix}>+91</span>
                   <input
                     type="tel"
                     id="signup-mobile"
@@ -85,9 +87,9 @@ function SignUp() {
                 </div>
               </div>
 
-              <div classNew={styles.formGroup}>
+              <div className={styles.formGroup}>
                 <label for="signup-password">Create Password</label>
-                <div classNew={styles.inputWithAction}>
+                <div className={styles.inputWithAction}>
                   <input
                     type="password"
                     id="signup-password"
@@ -97,20 +99,22 @@ function SignUp() {
                   />
                   <button
                     type="button"
-                    classNew={styles.inputActionBtn}
+                    className={styles.inputActionBtn}
                     onclick="togglePassword('signup-password', this)">
                     Show
                   </button>
                 </div>
-                <div classNew={styles.passwordStrength} id="strength-bar">
-                  <div classNew={styles.strengthFill} id="strength-fill"></div>
+                <div className={styles.passwordStrength} id="strength-bar">
+                  <div className={styles.strengthFill} id="strength-fill"></div>
                 </div>
-                <span classNew={styles.strengthLabel} id="strength-label"></span>
+                <span
+                  className={styles.strengthLabel}
+                  id="strength-label"></span>
               </div>
 
-              <div classNew={styles.formGroup}>
+              <div className={styles.formGroup}>
                 <label for="signup-confirm">Confirm Password</label>
-                <div classNew={styles.inputWithAction}>
+                <div className={styles.inputWithAction}>
                   <input
                     type="password"
                     id="signup-confirm"
@@ -119,15 +123,15 @@ function SignUp() {
                   />
                   <button
                     type="button"
-                    classNew={styles.inputActionBtn}
+                    className={styles.inputActionBtn}
                     onclick="togglePassword('signup-confirm', this)">
                     Show
                   </button>
                 </div>
-                <span classNew={styles.fieldError} id="confirm-error"></span>
+                <span className={styles.fieldError} id="confirm-error"></span>
               </div>
 
-              <div classNew={`${styles.formGroup} ${styles.formCheck}`}>
+              <div className={`${styles.formGroup} ${styles.formCheck}`}>
                 <input type="checkbox" id="terms-check" required />
                 <label for="terms-check">
                   I agree to Myntra's <a href="#">Terms of Use</a> and{" "}
@@ -135,22 +139,22 @@ function SignUp() {
                 </label>
               </div>
 
-              <div classNew={`${styles.formGroup} ${styles.formCheck}`}>
+              <div className={`${styles.formGroup} ${styles.formCheck}`}>
                 <input type="checkbox" id="promo-check" checked />
                 <label for="promo-check">
                   Send me exclusive deals, offers and updates via email & SMS
                 </label>
               </div>
 
-              <button type="submit" classNew={styles.btnAuthPrimary}>
+              <button type="submit" className={styles.btnAuthPrimary}>
                 CREATE ACCOUNT
               </button>
 
-              <div classNew={styles.authDivider}>
+              <div className={styles.authDivider}>
                 <span>OR</span>
               </div>
 
-              <button type="button" classNew={styles.btnAuthSecondary}>
+              <button type="button" className={styles.btnAuthSecondary}>
                 <svg viewBox="0 0 24 24" width="18" height="18">
                   <path
                     fill="#4285F4"
@@ -173,7 +177,7 @@ function SignUp() {
               </button>
             </form>
 
-            <p classNew={styles.authSwitch}>
+            <p className={styles.authSwitch}>
               Already have an account? <a href="login.html">Login</a>
             </p>
           </div>
