@@ -28,7 +28,7 @@ export default function Studio() {
       {/* <!-- Studio Feed Grid (Instagram-like masonry) --> */}
       <div className={styles.studioFeed}>
         <div className={`${styles.studioCard} ${styles.tall}`}>
-          <img src="/images/img_58.jpg" alt="Look 1" />
+          <img src="/First-React/images/img_58.jpg" alt="Look 1" />
           <div className={styles.studioCardOverlay}>
             <div className={styles.influencerInfo}>
               <div className={styles.influencerAvatar}>A</div>
@@ -44,7 +44,7 @@ export default function Studio() {
         </div>
 
         <div className={styles.studioCard}>
-          <img src="/images/img_59.jpg" alt="Look 2" />
+          <img src="/First-React/images/img_59.jpg" alt="Look 2" />
           <div className={styles.studioCardOverlay}>
             <div className={styles.influencerInfo}>
               <div className={styles.influencerAvatar}>R</div>
@@ -62,7 +62,7 @@ export default function Studio() {
         </div>
 
         <div className={styles.studioCard}>
-          <img src="/images/img_60.jpg" alt="Look 3" />
+          <img src="/First-React/images/img_60.jpg" alt="Look 3" />
           <div className={styles.studioCardOverlay}>
             <div className={styles.influencerInfo}>
               <div className={styles.influencerAvatar}>P</div>
@@ -78,7 +78,7 @@ export default function Studio() {
         </div>
 
         <div className={`${styles.studioCard} ${styles.tall}`}>
-          <img src="/images/img_61.jpg" alt="Look 4" />
+          <img src="/First-React/images/img_61.jpg" alt="Look 4" />
           <div className={styles.studioCardOverlay}>
             <div className={styles.influencerInfo}>
               <div className={styles.influencerAvatar}>S</div>
@@ -94,7 +94,7 @@ export default function Studio() {
         </div>
 
         <div className={styles.studioCard}>
-          <img src="/images/img_62.jpg" alt="Look 5" />
+          <img src="/First-React/images/img_62.jpg" alt="Look 5" />
           <div className={styles.studioCardOverlay}>
             <div className={styles.influencerInfo}>
               <div className={styles.influencerAvatar}>M</div>
@@ -110,7 +110,7 @@ export default function Studio() {
         </div>
 
         <div className={styles.studioCard}>
-          <img src="/images/img_63.jpg" alt="Look 6" />
+          <img src="/First-React/images/img_63.jpg" alt="Look 6" />
           <div className={styles.studioCardOverlay}>
             <div className={styles.influencerInfo}>
               <div className={styles.influencerAvatar}>K</div>

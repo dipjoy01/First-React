@@ -15,22 +15,22 @@ function ProductDetail() {
           <div className={styles.pdpGallery}>
             <div className={styles.galleryThumbnails}>
               <img
-                src="/images/img_68.jpg"
+                src="/First-React/images/img_68.jpg"
                 alt="View 1"
                 className={`${styles.thumb} active`}
               />
               <img
-                src="/images/img_69.jpg"
+                src="/First-React/images/img_69.jpg"
                 alt="View 2"
                 className={styles.thumb}
               />
               <img
-                src="/images/img_70.jpg"
+                src="/First-React/images/img_70.jpg"
                 alt="View 3"
                 className={styles.thumb}
               />
               <img
-                src="/images/img_71.jpg"
+                src="/First-React/images/img_71.jpg"
                 alt="View 4"
                 className={styles.thumb}
               />
@@ -38,7 +38,7 @@ function ProductDetail() {
             <div className={styles.galleryMain}>
               <img
                 id="div-image"
-                src="/images/img_72.jpg"
+                src="/First-React/images/img_72.jpg"
                 alt="div Product Image"
               />
               <div className={styles.galleryNav}>

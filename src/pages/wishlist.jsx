@@ -33,7 +33,7 @@ export default function WhishList() {
           <div className={styles.productCard}>
             <Link to="/productdetail">
               <div className={styles.productImageContainer}>
-                <img src="/images/img_64.jpg" alt="Black T-shirt" />
+                <img src="/First-React/images/img_64.jpg" alt="Black T-shirt" />
                 <div className={styles.productRating}>4.2 ⭐ | 3.4k</div>
               </div>
               <div className={styles.productDetails}>
@@ -72,7 +72,7 @@ export default function WhishList() {
           <div className={styles.productCard}>
             <Link to="/productdetail">
               <div className={styles.productImageContainer}>
-                <img src="/images/img_81.jpg" alt="Running Shoes" />
+                <img src="/First-React/images/img_81.jpg" alt="Running Shoes" />
                 <div className={styles.productRating}>4.5 ⭐ | 1.2k</div>
               </div>
               <div className={styles.productDetails}>
@@ -111,7 +111,7 @@ export default function WhishList() {
           <div className={styles.productCard}>
             <Link to="/productdetail">
               <div className={styles.productImageContainer}>
-                <img src="/images/img_82.jpg" alt="Watch" />
+                <img src="/First-React/images/img_82.jpg" alt="Watch" />
                 <div className={styles.productRating}>4.3 ⭐ | 560</div>
               </div>
               <div className={styles.productDetails}>

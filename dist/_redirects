@@ -1,0 +1,3 @@
+# GitHub Pages SPA redirect configuration
+# This file tells GitHub Pages to serve index.html for all routes
+/*    /First-React/index.html   200

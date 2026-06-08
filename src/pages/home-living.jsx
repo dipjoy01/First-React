@@ -9,27 +9,27 @@ export default function HomeLive() {
         <h2 className={styles.sectionTitle}>SHOP BY CATEGORY</h2>
         <div className={styles.circleGrid}>
           <Link to ="/product" className={styles.circleItem}>
-            <img src="/images/img_38.jpg" alt="Bedding" />
+            <img src="/First-React/images/img_38.jpg" alt="Bedding" />
             <span>Bedding</span>
           </Link>
           <Link to ="/product" className={styles.circleItem}>
-            <img src="/images/img_39.jpg" alt="Kitchen" />
+            <img src="/First-React/images/img_39.jpg" alt="Kitchen" />
             <span>Kitchen</span>
           </Link>
           <Link to ="/product" className={styles.circleItem}>
-            <img src="/images/img_40.jpg" alt="Decor" />
+            <img src="/First-React/images/img_40.jpg" alt="Decor" />
             <span>Home Decor</span>
           </Link>
           <Link to ="/product" className={styles.circleItem}>
-            <img src="/images/img_41.jpg" alt="Bath" />
+            <img src="/First-React/images/img_41.jpg" alt="Bath" />
             <span>Bath & Towels</span>
           </Link>
           <Link to ="/product" className={styles.circleItem}>
-            <img src="/images/img_42.jpg" alt="Cushions" />
+            <img src="/First-React/images/img_42.jpg" alt="Cushions" />
             <span>Cushions</span>
           </Link>
           <Link to ="/product" className={styles.circleItem}>
-            <img src="/images/img_43.jpg" alt="Lighting" />
+            <img src="/First-React/images/img_43.jpg" alt="Lighting" />
             <span>Lighting</span>
           </Link>
         </div>
@@ -38,28 +38,28 @@ export default function HomeLive() {
         <h2 className={styles.sectionTitle}>POPULAR HOME BRANDS</h2>
         <div className={styles.brandGrid}>
           <Link to ="/product" className={styles.brandCard}>
-            <img src="/images/img_44.jpg" alt="Brand" />
+            <img src="/First-React/images/img_44.jpg" alt="Brand" />
             <div className={styles.brandInfo}>
               <h3>Spaces</h3>
               <p>Up to 50% Off</p>
             </div>
           </Link>
           <Link to ="/product" className={styles.brandCard}>
-            <img src="/images/img_45.jpg" alt="Brand" />
+            <img src="/First-React/images/img_45.jpg" alt="Brand" />
             <div className={styles.brandInfo}>
               <h3>Story@Home</h3>
               <p>Min 40% Off</p>
             </div>
           </Link>
           <Link to ="/product" className={styles.brandCard}>
-            <img src="/images/img_46.jpg" alt="Brand" />
+            <img src="/First-React/images/img_46.jpg" alt="Brand" />
             <div className={styles.brandInfo}>
               <h3>Trident</h3>
               <p>Up to 55% Off</p>
             </div>
           </Link>
           <Link to ="/product" className={styles.brandCard}>
-            <img src="/images/img_47.jpg" alt="Brand" />
+            <img src="/First-React/images/img_47.jpg" alt="Brand" />
             <div className={styles.brandInfo}>
               <h3>Raymond Home</h3>
               <p>Min 30% Off</p>

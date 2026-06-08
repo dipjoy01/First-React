@@ -169,7 +169,7 @@ function Product() {
               <Link to = '/productdetail'>
                 <div className={styles.productImageContainer}>
                   <img
-                    src="/images/img_64.jpg"
+                    src="/First-React/images/img_64.jpg"
                     alt="Black T-shirt"
                   />
                   <div className={styles.productRating}>4.2 ⭐ | 3.4k</div>
@@ -196,7 +196,7 @@ function Product() {
               <Link to = '/productdetail'>
                 <div className={styles.productImageContainer}>
                   <img
-                    src="/images/img_65.jpg"
+                    src="/First-React/images/img_65.jpg"
                     alt="White T-shirt"
                   />
                   <div className={styles.productRating}>4.5 ⭐ | 1.2k</div>
@@ -222,7 +222,7 @@ function Product() {
             <div className={styles.productCard}>
               <Link to = '/productdetail'>
                 <div className={styles.productImageContainer}>
-                  <img src="/images/img_66.jpg" alt="Grey T-shirt" />
+                  <img src="/First-React/images/img_66.jpg" alt="Grey T-shirt" />
                   <div className={styles.productRating}>4.1 ⭐ | 890</div>
                 </div>
                 <div className={styles.productDetails}>
@@ -246,7 +246,7 @@ function Product() {
             <div className={styles.productCard}>
               <Link to = '/productdetail'>
                 <div className={styles.productImageContainer}>
-                  <img src="/images/img_67.jpg" alt="Blue T-shirt" />
+                  <img src="/First-React/images/img_67.jpg" alt="Blue T-shirt" />
                 </div>
                 <div className={styles.productDetails}>
                   <h3 className={styles.productBrand}>WROGN</h3>

@@ -77,12 +77,12 @@ function Footer() {
               className={styles.appLinks}
               style={{ display: "flex", gap: "10px", marginBottom: "20px" }}>
               <img
-                src="/images/img_12.png"
+                src="/First-React/images/img_12.png"
                 alt="Google Play"
                 style={{ height: "42px" }}
               />
               <img
-                src="/images/img_13.png"
+                src="/First-React/images/img_13.png"
                 alt="App Store"
                 style={{ height: "42px" }}
               />
@@ -131,7 +131,7 @@ function Footer() {
             </p>
           </div>
           <div className={styles.guaranteeItem}>
-            <img src="/images/img_15.png" alt="Return within 14days" />
+            <img src="/First-React/images/img_15.png" alt="Return within 14days" />
             <p>
               <span>Return within 14days</span> of receiving your order
             </p>

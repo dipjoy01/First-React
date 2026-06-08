@@ -27,7 +27,7 @@ function cart() {
           <div className={styles.cartItemsSection}>
             <div className={styles.cartItem}>
               <img
-                src="/images/img_76.jpg"
+                src="/First-React/images/img_76.jpg"
                 alt="T-Shirt"
                 className={styles.cartItemImg}
               />
@@ -60,7 +60,7 @@ function cart() {
 
             <div className={styles.cartItem}>
               <img
-                src="/images/img_77.jpg"
+                src="/First-React/images/img_77.jpg"
                 alt="Shoes"
                 className={styles.cartItemImg}
               />

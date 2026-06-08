@@ -2,12 +2,12 @@ import styles from "./CategoryGrid.module.css";
 import { Link } from "react-router-dom";
 
 const CATEGORIES = [
-  { id: 1, name: "T-Shirts", image: "/images/img_2.jpg", link: "products.html" }, // Note: img_2.jpg used as a placeholder if empty
-  { id: 2, name: "Jackets", image: "/images/img_3.jpg", link: "products.html" },
-  { id: 3, name: "Dresses", image: "/images/img_4.jpg", link: "products.html" },
-  { id: 4, name: "Shoes", image: "/images/img_5.jpg", link: "products.html" },
-  { id: 5, name: "Watches", image: "/images/img_6.jpg", link: "products.html" },
-  { id: 6, name: "Bags", image: "/images/img_7.jpg", link: "products.html" },
+  { id: 1, name: "T-Shirts", image: "/First-React/images/img_2.jpg", link: "products.html" }, // Note: img_2.jpg used as a placeholder if empty
+  { id: 2, name: "Jackets", image: "/First-React/images/img_3.jpg", link: "products.html" },
+  { id: 3, name: "Dresses", image: "/First-React/images/img_4.jpg", link: "products.html" },
+  { id: 4, name: "Shoes", image: "/First-React/images/img_5.jpg", link: "products.html" },
+  { id: 5, name: "Watches", image: "/First-React/images/img_6.jpg", link: "products.html" },
+  { id: 6, name: "Bags", image: "/First-React/images/img_7.jpg", link: "products.html" },
 ];
 
 const CategoryGrid = () => {

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 - Redirecting...</title>
+    <script>
+        // SPA redirect script for GitHub Pages
+        const pathSegments = window.location.pathname.split('/').filter(Boolean);
+        
+        // Remove the repo name 'First-React' from the path
+        if (pathSegments[0] === 'First-React') {
+            pathSegments.shift();
+        }
+        
+        // Store the original path
+        const redirectPath = '/' + pathSegments.join('/');
+        
+        // Store it in sessionStorage and redirect to home
+        if (redirectPath !== '/') {
+            sessionStorage.setItem('redirectPath', redirectPath);
+        }
+        
+        window.location.href = '/First-React/';
+    </script>
+</head>
+<body>
+    <p>Redirecting...</p>
+</body>
+</html>

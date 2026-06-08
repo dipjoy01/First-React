@@ -9,27 +9,27 @@ export default function Ki() {
         <h2 className={styles.sectionTitle}>TOP CATEGORIES FOR KIDS</h2>
         <div className={styles.circleGrid}>
           <Link to="/product" className={styles.circleItem}>
-            <img src="/images/img_31.jpg" alt="Boys Clothing" />
+            <img src="/First-React/images/img_31.jpg" alt="Boys Clothing" />
             <span>Boys Clothing</span>
           </Link>
           <Link to="/product" className={styles.circleItem}>
-            <img src="/images/img_32.jpg" alt="Girls Clothing" />
+            <img src="/First-React/images/img_32.jpg" alt="Girls Clothing" />
             <span>Girls Clothing</span>
           </Link>
           <Link to="/product" className={styles.circleItem}>
-            <img src="/images/img_33.jpg" alt="Kids Shoes" />
+            <img src="/First-React/images/img_33.jpg" alt="Kids Shoes" />
             <span>Shoes</span>
           </Link>
           <Link to="/product" className={styles.circleItem}>
-            <img src="/images/img_5.jpg" alt="School Bags" />
+            <img src="/First-React/images/img_5.jpg" alt="School Bags" />
             <span>School Bags</span>
           </Link>
           <Link to="/product" className={styles.circleItem}>
-            <img src="/images/img_35.jpg" alt="Sportswear" />
+            <img src="/First-React/images/img_35.jpg" alt="Sportswear" />
             <span>Sportswear</span>
           </Link>
           <Link to="/product" className={styles.circleItem}>
-            <img src="/images/img_36.jpg" alt="Newborn" />
+            <img src="/First-React/images/img_36.jpg" alt="Newborn" />
             <span>Newborn</span>
           </Link>
         </div>
